@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>影评 on 王北洛写字的地方</title>
-    <link>http://example.org/tags/%E5%BD%B1%E8%AF%84/</link>
+    <link>https://beiluo-wang.github.io/tags/%E5%BD%B1%E8%AF%84/</link>
     <description>Recent content in 影评 on 王北洛写字的地方</description>
     <image>
-      <url>http://example.org/profile.png</url>
-      <link>http://example.org/profile.png</link>
+      <url>https://beiluo-wang.github.io/profile.png</url>
+      <link>https://beiluo-wang.github.io/profile.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 15 Jan 2022 16:51:45 +0800</lastBuildDate><atom:link href="http://example.org/tags/%E5%BD%B1%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 16:51:45 +0800</lastBuildDate><atom:link href="https://beiluo-wang.github.io/tags/%E5%BD%B1%E8%AF%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Don’t Look Up （不要抬头），影评</title>
-      <link>http://example.org/2022/01/dont-look-up-%E4%B8%8D%E8%A6%81%E6%8A%AC%E5%A4%B4%E5%BD%B1%E8%AF%84/</link>
+      <link>https://beiluo-wang.github.io/2022/01/dont-look-up-%E4%B8%8D%E8%A6%81%E6%8A%AC%E5%A4%B4%E5%BD%B1%E8%AF%84/</link>
       <pubDate>Sat, 15 Jan 2022 16:51:45 +0800</pubDate>
       
-      <guid>http://example.org/2022/01/dont-look-up-%E4%B8%8D%E8%A6%81%E6%8A%AC%E5%A4%B4%E5%BD%B1%E8%AF%84/</guid>
+      <guid>https://beiluo-wang.github.io/2022/01/dont-look-up-%E4%B8%8D%E8%A6%81%E6%8A%AC%E5%A4%B4%E5%BD%B1%E8%AF%84/</guid>
       <description>@Netflix
   个人评分：8.0/10
 *无剧透请放心食用

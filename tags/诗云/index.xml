@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>诗云 on 王北洛写字的地方</title>
-    <link>http://example.org/tags/%E8%AF%97%E4%BA%91/</link>
+    <link>https://beiluo-wang.github.io/tags/%E8%AF%97%E4%BA%91/</link>
     <description>Recent content in 诗云 on 王北洛写字的地方</description>
     <image>
-      <url>http://example.org/profile.png</url>
-      <link>http://example.org/profile.png</link>
+      <url>https://beiluo-wang.github.io/profile.png</url>
+      <link>https://beiluo-wang.github.io/profile.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 18 Jan 2022 16:55:27 +0800</lastBuildDate><atom:link href="http://example.org/tags/%E8%AF%97%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jan 2022 16:55:27 +0800</lastBuildDate><atom:link href="https://beiluo-wang.github.io/tags/%E8%AF%97%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>诗云，蔷薇园</title>
-      <link>http://example.org/2022/01/%E8%AF%97%E4%BA%91%E8%94%B7%E8%96%87%E5%9B%AD/</link>
+      <link>https://beiluo-wang.github.io/2022/01/%E8%AF%97%E4%BA%91%E8%94%B7%E8%96%87%E5%9B%AD/</link>
       <pubDate>Tue, 18 Jan 2022 16:55:27 +0800</pubDate>
       
-      <guid>http://example.org/2022/01/%E8%AF%97%E4%BA%91%E8%94%B7%E8%96%87%E5%9B%AD/</guid>
+      <guid>https://beiluo-wang.github.io/2022/01/%E8%AF%97%E4%BA%91%E8%94%B7%E8%96%87%E5%9B%AD/</guid>
       <description> @王北洛
    每当我想念你的时候
 我都会踱步到蔷薇园
