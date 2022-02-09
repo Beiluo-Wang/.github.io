@@ -10,9 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 01 Feb 2022 21:51:55 +0800</lastBuildDate><atom:link href="https://beiluo-wang.github.io/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Feb 2022 21:38:13 +0800</lastBuildDate><atom:link href="https://beiluo-wang.github.io/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>新年新家，从Google Blogger到Hugo：2. 不够优雅的Hugo体验</title>
+      <title>新年新家，从Google Blogger到Hugo：3 令人惊喜的GitHub Copilot</title>
+      <link>https://beiluo-wang.github.io/2022/02/new-year-new-home-surprising-copilot/</link>
+      <pubDate>Wed, 09 Feb 2022 21:38:13 +0800</pubDate>
+      
+      <guid>https://beiluo-wang.github.io/2022/02/new-year-new-home-surprising-copilot/</guid>
+      <description>大年初五，GitHub给我送来了迟到的新年礼物：Copilot技术预览版的测试资格——而距离我提交申请，已经过去了近三个月的时间。Copilot开发团队称Copilot可以帮助开发者快速使用一门不熟悉的编程语言进行功能实现，而作为一名半吊子程序员，在博客迁移的过程中我正面临着自动化文章发布流程的问题。此前还在担心对于SHELL SCRIPT比较陌生，自动化脚本的编写会比较困难。刚好趁此机会，感受一下Copilot的功能。虽然在此前已经在官方的demo中见识到了Copilot的强大，但实际使用的过程中还是被惊到——它不仅仅是在GitHub庞大的代码库中进行检索和匹配，还能预测到我下一步想要进行的操作。而我自己，在很多时候，只需要一直按tab就够了。
+在本篇文章中，我将结合自动化发布脚本的实现，对Copilot的使用感受进行介绍。然后再简单介绍一下访问分析工具的部署和域名映射的过程。
+博文自动化发布 在新年新家系列的第二篇文章中，我总结了文章从完成写作到发布的四个步骤：
+  从Hugo模板新建博文.md文件； 导入Obsidian中的写好的内容，并调整图片等markdown语法格式以能够被Hugo识别； 网站编译； 上传到托管平台。   而实现博文的自动化发布，就是希望通过编写SHELL脚本，通过一行命令完成以上四个步骤。
+我将脚本的实现分为以下几个模块：初始化、meta-data（Front Matter）调整、格式调整以及编译发布，下面依次进行介绍。
+初始化 在初始化模块，主要涉及参数传递和路径设置。 值得一提的是，在.sh脚本文件头部，通过注释写完功能简介之后，Copilot竟然自己通过文件名推断出了Author信息，并帮我添加到了后续的注视中。比较奇怪的是，Copilot联想出来的时间信息不是当天，而是2008年的一天，不知是何原因。
+参数传递 发布文章时需要指定用于生成博文路径（url）的Hugo目录中的文件名filename、Obsidian中对应的文件名article_name.md、标签tags以及发布标识符auto_publish1：
+# filename is used to define the url of the post filename=$1 # article_name is used to identify the file in obisidian workspace article_name=$2 # tags are used to define the tags of the post tags=$3 # auto_publish is used to define whether the post should be published automatically auto_publish=$4 在编写参数说明的过程中，基本上只需要键入参数名，Copilot就可以补全后续的说明本文，比如</description>
+    </item>
+    
+    <item>
+      <title>新年新家，从Google Blogger到Hugo：2 不够优雅的Hugo体验</title>
       <link>https://beiluo-wang.github.io/2022/02/new-year-new-home-hi-hugo/</link>
       <pubDate>Tue, 01 Feb 2022 21:51:55 +0800</pubDate>
       
@@ -31,7 +47,7 @@
     </item>
     
     <item>
-      <title>新年新家，从Google Blogger到Hugo: 1. Blogger的优缺点</title>
+      <title>新年新家，从Google Blogger到Hugo：1 Blogger的优缺点</title>
       <link>https://beiluo-wang.github.io/2022/01/new-year-new-home-blogger-evaluation/</link>
       <pubDate>Mon, 31 Jan 2022 17:16:09 +0800</pubDate>
       
