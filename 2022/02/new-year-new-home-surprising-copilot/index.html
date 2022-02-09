@@ -142,10 +142,10 @@
 </div>
 </details>
 </div>
-<div class=post-content><p>大年初五，GitHub给我送来了迟到的新年礼物：<a href=https://copilot.github.com>Copilot技术预览版</a>的测试资格——而距离我提交申请，已经过去了近三个月的时间。Copilot开发团队称Copilot可以帮助开发者快速使用一门不熟悉的编程语言进行功能实现，而作为一名半吊子程序员，在<a href=https://beiluo-wang.github.io/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/>博客迁移</a>的过程中我正面临着自动化文章发布流程的问题。此前还在担心对于<code>SHELL SCRIPT</code>比较陌生，自动化脚本的编写会比较困难。刚好趁此机会，感受一下Copilot的功能。虽然在此前已经在官方的demo中见识到了Copilot的强大，但实际使用的过程中还是被惊到——它不仅仅是在GitHub庞大的代码库中进行检索和匹配，还能预测到我下一步想要进行的操作。而我自己，在很多时候，只需要一直按<code>tab</code>就够了。</p>
+<div class=post-content><p>大年初五，GitHub给我送来了迟到的新年礼物：<a href=https://copilot.github.com>Copilot技术预览版</a>的测试资格——而距离我提交申请，已经过去了近三个月的时间。Copilot开发团队称Copilot可以帮助开发者快速使用一门不熟悉的编程语言进行功能实现，而作为一名半吊子程序员，在<a href=https://www.beiluowang.com/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/>博客迁移</a>的过程中我正面临着自动化文章发布流程的问题。此前还在担心对于<code>SHELL SCRIPT</code>比较陌生，自动化脚本的编写会比较困难。刚好趁此机会，感受一下Copilot的功能。虽然在此前已经在官方的demo中见识到了Copilot的强大，但实际使用的过程中还是被惊到——它不仅仅是在GitHub庞大的代码库中进行检索和匹配，还能预测到我下一步想要进行的操作。而我自己，在很多时候，只需要一直按<code>tab</code>就够了。</p>
 <p>在本篇文章中，我将结合自动化发布脚本的实现，对Copilot的使用感受进行介绍。然后再简单介绍一下访问分析工具的部署和域名映射的过程。</p>
 <h2 id=博文自动化发布>博文自动化发布<a hidden class=anchor aria-hidden=true href=#博文自动化发布>#</a></h2>
-<p>在<a href=https://beiluo-wang.github.io/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/>新年新家</a>系列的<a href=https://beiluo-wang.github.io/2022/02/new-year-new-home-hi-hugo/>第二篇文章</a>中，我总结了文章从完成写作到发布的四个步骤：</p>
+<p>在<a href=https://www.beiluowang.com/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/>新年新家</a>系列的<a href=https://www.beiluowang.com/2022/02/new-year-new-home-hi-hugo/>第二篇文章</a>中，我总结了文章从完成写作到发布的四个步骤：</p>
 <blockquote>
 <ol>
 <li>从Hugo模板新建博文<code>.md</code>文件；</li>
