@@ -9,6 +9,7 @@
       <link>https://beiluo-wang.github.io/profile.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language><atom:link href="https://beiluo-wang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh</language>
+    <copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright><atom:link href="https://beiluo-wang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
