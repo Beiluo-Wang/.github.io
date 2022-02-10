@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>新年新家 on 王北洛写字的地方</title>
-    <link>https://beiluo-wang.github.io/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/</link>
+    <link>https://www.beiluowang.com/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/</link>
     <description>Recent content in 新年新家 on 王北洛写字的地方</description>
     <image>
-      <url>https://beiluo-wang.github.io/profile.png</url>
-      <link>https://beiluo-wang.github.io/profile.png</link>
+      <url>https://www.beiluowang.com/profile.png</url>
+      <link>https://www.beiluowang.com/profile.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright>
-    <lastBuildDate>Wed, 09 Feb 2022 21:38:13 +0800</lastBuildDate><atom:link href="https://beiluo-wang.github.io/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Feb 2022 21:38:13 +0800</lastBuildDate><atom:link href="https://www.beiluowang.com/tags/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%AE%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新年新家，从Google Blogger到Hugo：3 令人惊喜的GitHub Copilot</title>
-      <link>https://beiluo-wang.github.io/2022/02/new-year-new-home-surprising-copilot/</link>
+      <link>https://www.beiluowang.com/2022/02/new-year-new-home-surprising-copilot/</link>
       <pubDate>Wed, 09 Feb 2022 21:38:13 +0800</pubDate>
       
-      <guid>https://beiluo-wang.github.io/2022/02/new-year-new-home-surprising-copilot/</guid>
+      <guid>https://www.beiluowang.com/2022/02/new-year-new-home-surprising-copilot/</guid>
       <description>大年初五，GitHub给我送来了迟到的新年礼物：Copilot技术预览版的测试资格——而距离我提交申请，已经过去了近三个月的时间。Copilot开发团队称Copilot可以帮助开发者快速使用一门不熟悉的编程语言进行功能实现，而作为一名半吊子程序员，在博客迁移的过程中我正面临着自动化文章发布流程的问题。此前还在担心对于SHELL SCRIPT比较陌生，自动化脚本的编写会比较困难。刚好趁此机会，感受一下Copilot的功能。虽然在此前已经在官方的demo中见识到了Copilot的强大，但实际使用的过程中还是被惊到——它不仅仅是在GitHub庞大的代码库中进行检索和匹配，还能预测到我下一步想要进行的操作。而我自己，在很多时候，只需要一直按tab就够了。
 在本篇文章中，我将结合自动化发布脚本的实现，对Copilot的使用感受进行介绍。然后再简单介绍一下访问分析工具的部署和域名映射的过程。
 博文自动化发布 在新年新家系列的第二篇文章中，我总结了文章从完成写作到发布的四个步骤：
@@ -30,10 +30,10 @@
     
     <item>
       <title>新年新家，从Google Blogger到Hugo：2 不够优雅的Hugo体验</title>
-      <link>https://beiluo-wang.github.io/2022/02/new-year-new-home-hi-hugo/</link>
+      <link>https://www.beiluowang.com/2022/02/new-year-new-home-hi-hugo/</link>
       <pubDate>Tue, 01 Feb 2022 21:51:55 +0800</pubDate>
       
-      <guid>https://beiluo-wang.github.io/2022/02/new-year-new-home-hi-hugo/</guid>
+      <guid>https://www.beiluowang.com/2022/02/new-year-new-home-hi-hugo/</guid>
       <description>在新年新家系列第一篇博文中，我介绍了使用Google Blogger作为博客平台两个月来的心得体会，以及决定将其放弃的原因：我想要保证本地和网站服务端内容同步，并且希望能够拥有更为优雅的发布体验。 本篇博文将首先介绍选择Hugo的原因，然后介绍网站内容配置和迁移的过程中遇到的问题以及相应的解决方法。最后，分享一下我目前的博文撰写和发布的工作流。
 选择Hugo的原因 搭建静态网站的工具有很多，除了Hugo外，常见的还有jekyll、 pelican、zola等。选择使用Hugo，主要有三个方面的原因：
  我正在将自己的主要编程语言转为Golang； Hugo开源免费，社区比较活跃，有很多高质量的主题； 据说工程结构比较清晰，可以方便地进行个性化配置。  初识Hugo 本系列不是教程，所以不会给出详细的配置过程，参考官方文档可以十分顺利地完成Hugo环境的搭建。我主要介绍一下我在博客内容迁移过程中所遇到的一些问题。
@@ -49,10 +49,10 @@
     
     <item>
       <title>新年新家，从Google Blogger到Hugo：1 Blogger的优缺点</title>
-      <link>https://beiluo-wang.github.io/2022/01/new-year-new-home-blogger-evaluation/</link>
+      <link>https://www.beiluowang.com/2022/01/new-year-new-home-blogger-evaluation/</link>
       <pubDate>Mon, 31 Jan 2022 17:16:09 +0800</pubDate>
       
-      <guid>https://beiluo-wang.github.io/2022/01/new-year-new-home-blogger-evaluation/</guid>
+      <guid>https://www.beiluowang.com/2022/01/new-year-new-home-blogger-evaluation/</guid>
       <description>逢虎年新春，自己在Blogger上已经发布了10篇文章，能坚持写作对自己而言是一件很有意义的事情。随着发布内容的增多，博客访问量也突破了1500人次，我渐渐发现将Blogger作为个人博客平台的一些局限性，所以考虑自行搭建。我将在新年新家系列，持续更新博客搭建和转移的过程。在本篇文章中，我首先分析一下Blogger的优缺点，以及我为什么准备离开这个平台。
 优势 Blogger作为 Google旗下的博客平台，其优势主要体现在便利和安全两个方面。
  便利性   我的域名是从Google Domains注册的，相较于其他域名注册商，Google Domains最大的好处在于 .com 域名的续费价格每年保持一致，不用担心恶意涨价。还有就是国外域名注册商都需要添加信用卡为付款方式，容易产生不必要的风险，在已经向Google添加了信用卡的情况下，我更倾向于直接使用Google的域名注册服务。 Blogger可以直接使用Google账号创建，如果创建Blogger和购买域名使用的是同一个账号的话，可以直接将自己的域名作为博客地址。Google会自动进行DNS设置，并提供免费的HTTPS服务，极大地简化了配置过程。 Blogger自带统计信息的功能，可以很方便细致地查看博客访问量和访问来源。 由于网站内容都保存在Blogger平台上，不需要自己搭建服务器，也不用担心访问速度。  安全性   依托于Google，网站的安全性得到了极大的保障，并且不需要付出任何成本。 个人信息可以得到比较好的保护。由于没有使用自建服务器，攻击者无法从服务器IP或者服务商获得个人信息；同时在Google Domains注册域名的时候，也会提供隐藏注册信息的服务，不用担心被whois开盒。  劣势  个性化设置较少   Blogger仅提供了少量主题，虽然能够调整布局并添加一些小工具，但个性化的程度仍然很低。  发布文章不方便   我的博文一般是在本地写好然后再发布到网站，在Blogger发布时每次都要重新排版，当博客内容需要修改的时候，也要分别在本地和Blogger修改，十分不方便，不便于进行内容管理。这也是我想要放弃Blogger的最主要的原因。  评论BUG   虽然博客有了一定的访问量，但评论数依然是0。测试之后我发现，Blogger的匿名评论存在Bug，无法成功发布，而要求读者使用Google账号发布无疑会降低评论的意愿。虽然我的博客主要是面向自己，但也很期待能够和读者有所交流。  大陆访问问题   作为Google的博客平台，Blogger已经遭到了Great Firewall的封锁，搭建于此的博客在大陆地区无法稳定访问。  总结 Blogger的优势和劣势都很明显，也有明确的适用人群。我个人很喜欢Blogger，这是我博客开始的地方，我也不是很介意主题单一。但是本地服务端内容同步于我而言十分重要，是一个必须要解决的问题，同时也为了长期的发布体验，我决定离开Blogger，使用Hugo搭建自己的个人博客。

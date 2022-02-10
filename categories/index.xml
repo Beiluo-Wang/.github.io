@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on 王北洛写字的地方</title>
-    <link>https://beiluo-wang.github.io/categories/</link>
+    <link>https://www.beiluowang.com/categories/</link>
     <description>Recent content in Categories on 王北洛写字的地方</description>
     <image>
-      <url>https://beiluo-wang.github.io/profile.png</url>
-      <link>https://beiluo-wang.github.io/profile.png</link>
+      <url>https://www.beiluowang.com/profile.png</url>
+      <link>https://www.beiluowang.com/profile.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright><atom:link href="https://beiluo-wang.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright><atom:link href="https://www.beiluowang.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
