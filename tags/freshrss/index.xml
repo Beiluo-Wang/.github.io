@@ -1,33 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>FreshRSS on 王北洛写字的地方</title>
-    <link>https://www.beiluowang.com/tags/freshrss/</link>
-    <description>Recent content in FreshRSS on 王北洛写字的地方</description>
-    <image>
-      <url>https://www.beiluowang.com/profile.png</url>
-      <link>https://www.beiluowang.com/profile.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright>
-    <lastBuildDate>Thu, 10 Feb 2022 22:10:43 +0800</lastBuildDate><atom:link href="https://www.beiluowang.com/tags/freshrss/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>王北洛的FreshRSS，试营业</title>
-      <link>https://www.beiluowang.com/2022/02/beiluowang-fresh-rss-trial-operation/</link>
-      <pubDate>Thu, 10 Feb 2022 22:10:43 +0800</pubDate>
-      
-      <guid>https://www.beiluowang.com/2022/02/beiluowang-fresh-rss-trial-operation/</guid>
-      <description>RSS可以帮助我们摆脱推荐算法的“投食”，让我们能够更加精准、高效地获取所需要的信息。关于RSS更加详细的介绍，可以参考少数派的文章：高效获取信息，你需要这份 RSS 入门指南。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>FreshRSS on 王北洛写字的地方</title><link>https://www.beiluowang.com/tags/freshrss/</link><description>Recent content in FreshRSS on 王北洛写字的地方</description><image><url>https://www.beiluowang.com/profile.png</url><link>https://www.beiluowang.com/profile.png</link></image><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright><lastBuildDate>Thu, 10 Feb 2022 22:10:43 +0800</lastBuildDate><atom:link href="https://www.beiluowang.com/tags/freshrss/index.xml" rel="self" type="application/rss+xml"/><item><title>王北洛的FreshRSS，试营业</title><link>https://www.beiluowang.com/2022/02/beiluowang-fresh-rss-trial-operation/</link><pubDate>Thu, 10 Feb 2022 22:10:43 +0800</pubDate><guid>https://www.beiluowang.com/2022/02/beiluowang-fresh-rss-trial-operation/</guid><description>RSS可以帮助我们摆脱推荐算法的“投食”，让我们能够更加精准、高效地获取所需要的信息。关于RSS更加详细的介绍，可以参考少数派的文章：高效获取信息，你需要这份 RSS 入门指南。
 王北洛的FreshRSS提供RSS订阅源托管服务，在这里你可以管理自己的订阅内容，并搭配主流阅读工具使用。详细功能和使用说明参考FreshRSS的官方主页。
 在试营业期间，为了保证服务质量，王北洛的FreshRSS将向少量用户开放。如有需求，请在文章的评论区评论，留下你的用户名和邮箱。账号添加完成后，我将通过邮件发送账号和密码。
-感谢捧场，让阅读成为一种习惯～</description>
-      <content:encoded><![CDATA[<p>RSS可以帮助我们摆脱推荐算法的“投食”，让我们能够更加精准、高效地获取所需要的信息。关于RSS更加详细的介绍，可以参考少数派的文章：<a href="https://sspai.com/post/56391">高效获取信息，你需要这份 RSS 入门指南</a>。</p>
+感谢捧场，让阅读成为一种习惯～</description><content:encoded><![CDATA[<p>RSS可以帮助我们摆脱推荐算法的“投食”，让我们能够更加精准、高效地获取所需要的信息。关于RSS更加详细的介绍，可以参考少数派的文章：<a href="https://sspai.com/post/56391">高效获取信息，你需要这份 RSS 入门指南</a>。</p>
 <p><a href="https://freshrss.beiluowang.com">王北洛的FreshRSS</a>提供RSS订阅源托管服务，在这里你可以管理自己的订阅内容，并搭配主流阅读工具使用。详细功能和使用说明参考<a href="https://freshrss.github.io/FreshRSS/">FreshRSS的官方主页</a>。</p>
 <p>在试营业期间，为了保证服务质量，<a href="https://freshrss.beiluowang.com">王北洛的FreshRSS</a>将向少量用户开放。如有需求，请在文章的评论区评论，留下你的用户名和邮箱。账号添加完成后，我将通过邮件发送账号和密码。</p>
 <p>感谢捧场，让阅读成为一种习惯～</p>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>

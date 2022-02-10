@@ -1,25 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>诗云 on 王北洛写字的地方</title>
-    <link>https://www.beiluowang.com/tags/%E8%AF%97%E4%BA%91/</link>
-    <description>Recent content in 诗云 on 王北洛写字的地方</description>
-    <image>
-      <url>https://www.beiluowang.com/profile.png</url>
-      <link>https://www.beiluowang.com/profile.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    <copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright>
-    <lastBuildDate>Tue, 18 Jan 2022 16:55:27 +0800</lastBuildDate><atom:link href="https://www.beiluowang.com/tags/%E8%AF%97%E4%BA%91/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>诗云，蔷薇园</title>
-      <link>https://www.beiluowang.com/2022/01/poem-cloud-rose-garden/</link>
-      <pubDate>Tue, 18 Jan 2022 16:55:27 +0800</pubDate>
-      
-      <guid>https://www.beiluowang.com/2022/01/poem-cloud-rose-garden/</guid>
-      <description> @王北洛
-   每当我想念你的时候
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>诗云 on 王北洛写字的地方</title><link>https://www.beiluowang.com/tags/%E8%AF%97%E4%BA%91/</link><description>Recent content in 诗云 on 王北洛写字的地方</description><image><url>https://www.beiluowang.com/profile.png</url><link>https://www.beiluowang.com/profile.png</link></image><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright><lastBuildDate>Tue, 18 Jan 2022 16:55:27 +0800</lastBuildDate><atom:link href="https://www.beiluowang.com/tags/%E8%AF%97%E4%BA%91/index.xml" rel="self" type="application/rss+xml"/><item><title>诗云，蔷薇园</title><link>https://www.beiluowang.com/2022/01/poem-cloud-rose-garden/</link><pubDate>Tue, 18 Jan 2022 16:55:27 +0800</pubDate><guid>https://www.beiluowang.com/2022/01/poem-cloud-rose-garden/</guid><description> @王北洛
+每当我想念你的时候
 我都会踱步到蔷薇园
 那是我们分别的地方
 ​
@@ -32,9 +12,7 @@
 风带来了你的味道
 云变化成你的模样
 密密层层的葱郁
-会打湿我的眼眶
- </description>
-      <content:encoded><![CDATA[<figure class="align-center ">
+会打湿我的眼眶</description><content:encoded><![CDATA[<figure class="align-center ">
     <img loading="lazy" src="/images/poem-cloud-rose-garden.assets/20190511_122321%202.jpg#center"
          alt="@王北洛"/> <figcaption>
             <p>@王北洛</p>
@@ -57,8 +35,4 @@
 <p>密密层层的葱郁</p>
 <p>会打湿我的眼眶</p>
 </blockquote>
-]]></content:encoded>
-    </item>
-    
-  </channel>
-</rss>
+]]></content:encoded></item></channel></rss>
