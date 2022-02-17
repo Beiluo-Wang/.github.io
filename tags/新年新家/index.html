@@ -86,16 +86,9 @@
 </h2>
 </header>
 <section class=entry-content>
-<p>大年初五，GitHub给我送来了迟到的新年礼物：Copilot技术预览版的测试资格——而距离我提交申请，已经过去了近三个月的时间。Copilot开发团队称Copilot可以帮助开发者快速使用一门不熟悉的编程语言进行功能实现，而作为一名半吊子程序员，在博客迁移的过程中我正面临着自动化文章发布流程的问题。此前还在担心对于SHELL SCRIPT比较陌生，自动化脚本的编写会比较困难。刚好趁此机会，感受一下Copilot的功能。虽然在此前已经在官方的demo中见识到了Copilot的强大，但实际使用的过程中还是被惊到——它不仅仅是在GitHub庞大的代码库中进行检索和匹配，还能预测到我下一步想要进行的操作。而我自己，在很多时候，只需要一直按tab就够了。
-在本篇文章中，我将结合自动化发布脚本的实现，对Copilot的使用感受进行介绍。然后再简单介绍一下访问分析工具的部署和域名映射的过程。
-博文自动化发布 在新年新家系列的第二篇文章中，我总结了文章从完成写作到发布的四个步骤：
-从Hugo模板新建博文.md文件； 导入Obsidian中的写好的内容，并调整图片等markdown语法格式以能够被Hugo识别； 网站编译； 上传到托管平台。 而实现博文的自动化发布，就是希望通过编写SHELL脚本，通过一行命令完成以上四个步骤。
-我将脚本的实现分为以下几个模块：初始化、meta-data（Front Matter）调整、格式调整以及编译发布，下面依次进行介绍。
-初始化 在初始化模块，主要涉及参数传递和路径设置。 值得一提的是，在.sh脚本文件头部，通过注释写完功能简介之后，Copilot竟然自己通过文件名推断出了Author信息，并帮我添加到了后续的注视中。比较奇怪的是，Copilot联想出来的时间信息不是当天，而是2008年的一天，不知是何原因。
-参数传递 发布文章时需要指定用于生成博文路径（url）的Hugo目录中的文件名filename、Obsidian中对应的文件名article_name.md、标签tags以及发布标识符auto_publish1：
-# filename is used to define the url of the post filename=$1 # article_name is used to identify the file in obisidian workspace article_name=$2 # tags are used to define the tags of the post tags=$3 # auto_publish is used to define whether the post should be published automatically auto_publish=$4 在编写参数说明的过程中，基本上只需要键入参数名，Copilot就可以补全后续的说明本文，比如...</p>
+<p>大年初五，GitHub给我送来了迟到的新年礼物：Copilot技术预览版的测试资格——而距离我提交申请，已经过去了近三个月的时间。Copil...</p>
 </section>
-<footer class=entry-footer><span title="2022-02-09 21:38:13 +0800 CST">二月 9, 2022</span>&nbsp;·&nbsp;王北洛</footer>
+<footer class=entry-footer><span title="2022-02-09 21:38:13 +0800 CST">二月 9, 2022</span>&nbsp;·&nbsp;2971 字&nbsp;·&nbsp;王北洛</footer>
 <a class=entry-link aria-label="post link to 新年新家，从Google Blogger到Hugo：3 令人惊喜的GitHub Copilot" href=https://www.beiluowang.com/2022/02/new-year-new-home-surprising-copilot/></a>
 </article>
 <article class="post-entry tag-entry">
@@ -104,19 +97,9 @@
 </h2>
 </header>
 <section class=entry-content>
-<p>在新年新家系列第一篇博文中，我介绍了使用Google Blogger作为博客平台两个月来的心得体会，以及决定将其放弃的原因：我想要保证本地和网站服务端内容同步，并且希望能够拥有更为优雅的发布体验。 本篇博文将首先介绍选择Hugo的原因，然后介绍网站内容配置和迁移的过程中遇到的问题以及相应的解决方法。最后，分享一下我目前的博文撰写和发布的工作流。
-选择Hugo的原因 搭建静态网站的工具有很多，除了Hugo外，常见的还有jekyll、 pelican、zola等。选择使用Hugo，主要有三个方面的原因：
-我正在将自己的主要编程语言转为Golang； Hugo开源免费，社区比较活跃，有很多高质量的主题； 据说工程结构比较清晰，可以方便地进行个性化配置。 初识Hugo 本系列不是教程，所以不会给出详细的配置过程，参考官方文档可以十分顺利地完成Hugo环境的搭建。我主要介绍一下我在博客内容迁移过程中所遇到的一些问题。
-主题选择 在Hugo主题官网上提供了数百个主题，可以根据个人需求进行选择。为了平衡易用性和美观，以及自己的博客内容，我选择了PaperMod主题。页面简洁，并且提供了归档、搜索以及目录生成的功能。
-评论工具 Hugo本身没有提供网站评论工具，虽然在官方文档中推荐了一些第三方平台，比如Disqus、Cactus Comments、Commento等，但要么免费服务含广告，要么需要自己部署，都不是十分满意。后来，我在Hugo用户论坛上看到有人推荐cusdis，提供免费的评论托管和通知的服务，支持匿名评论和审核发布，并且不含多余的广告（仅在评论框下面有Comments powered by Cusdis的超链接）。仔细评估后发现，cusdis基本可以满足我的需求，评论框风格和网站主题也比较搭配，所以暂时将其作为网站的评论服务平台。
-菜单设置 菜单设置可以照搬之前Blogger上的内容，主要包括“归档”、“标签”和“搜索”三个对博文进行管理的部分，以及版权声明和读书记录两个功能。菜单内容可以直接在网站config文件中进行配置。在配置过程中遇到了一个问题，到现在都没有解决。“标签”页面是主题文件中定义好的，但是没有对多语言进行适配，无论语言设置为何，在“标签”页面“HEAD”部分始终显示为“Tags”，在中文页面中显得十分违和。需要后面研究一下主题文件再进行问题的解决。
-博文编辑 Hugo使用Markdown进行博文的编辑，和我的写作习惯保持一致。但是不知出于什么原因，Hugo不能识别Markdown中的html语句，使得一些很简单的事情变得复杂。比如在之前写作的时候，可以直接使用&lt;img src="IMG_001.JPG" alt="IMG_0015" style="zoom:50%;" />实现图片的缩放，在Hugo中就不行。好在Hugo提供了Shortcodes功能，可以利用编写好的脚本，对缺失的功能进行实现。根据需求创建自己的Shortcodes，可以对网页内容进行极高程度的个性化。
-我的工作流 我目前使用Obsidian进行内容的创作和管理，当一篇文章完成准备发布时，需要进行以下操作：
-进入Hugo工程目录，使用Hugo命令新建博文.md文件； 使用Typora打开新建好的文件，将Obsidian中的内容复制进去，并调整图片、反向链接的语法格式以能够被Hugo识别； 使用Hugo命令编译网站； 将编译好的网站文件上传到托管平台。 可以发现，整个文章文章发布的过程还是很繁琐的，并没有想象中的优雅。仔细分析一下，最大的问题在于不能直接发布Obsidian写好的.md文件，一方面原因是需要额外添加一些Hugo需要的meta-data，另一方面在于需要对图片路径、语法以及Obsidian的反向链接进行调整。后面我将试着编写一些脚本来自动化文章发布的工作流，使其变得更加优雅。
-目前已经完成了博客主体内容的迁移，并将其以GitHub Pages的形式发布，后面的工作除了自动化脚本外，还需要进行网站统计工具的配置以及细节调整。在过渡期间，我将同时在Google Blogger和GitHub Pages进行博客内容的发布，待所有工作完成后，再正式将域名映射到GitHub Pages，届时将发布新年新家系列的最后一篇文章进行总结。
-期待正式搬家的那一天😀</p>
+<p>在新年新家系列第一篇博文中，我介绍了使用Google Blogger作为博客平台两个月来的心得体会，以及决定将其放弃的原因：我想要保证本地和网...</p>
 </section>
-<footer class=entry-footer><span title="2022-02-01 21:51:55 +0800 CST">二月 1, 2022</span>&nbsp;·&nbsp;王北洛</footer>
+<footer class=entry-footer><span title="2022-02-01 21:51:55 +0800 CST">二月 1, 2022</span>&nbsp;·&nbsp;1719 字&nbsp;·&nbsp;王北洛</footer>
 <a class=entry-link aria-label="post link to 新年新家，从Google Blogger到Hugo：2 不够优雅的Hugo体验" href=https://www.beiluowang.com/2022/02/new-year-new-home-hi-hugo/></a>
 </article>
 <article class="post-entry tag-entry">
@@ -125,12 +108,9 @@
 </h2>
 </header>
 <section class=entry-content>
-<p>逢虎年新春，自己在Blogger上已经发布了10篇文章，能坚持写作对自己而言是一件很有意义的事情。随着发布内容的增多，博客访问量也突破了1500人次，我渐渐发现将Blogger作为个人博客平台的一些局限性，所以考虑自行搭建。我将在新年新家系列，持续更新博客搭建和转移的过程。在本篇文章中，我首先分析一下Blogger的优缺点，以及我为什么准备离开这个平台。
-优势 Blogger作为 Google旗下的博客平台，其优势主要体现在便利和安全两个方面。
-便利性 我的域名是从Google Domains注册的，相较于其他域名注册商，Google Domains最大的好处在于 .com 域名的续费价格每年保持一致，不用担心恶意涨价。还有就是国外域名注册商都需要添加信用卡为付款方式，容易产生不必要的风险，在已经向Google添加了信用卡的情况下，我更倾向于直接使用Google的域名注册服务。 Blogger可以直接使用Google账号创建，如果创建Blogger和购买域名使用的是同一个账号的话，可以直接将自己的域名作为博客地址。Google会自动进行DNS设置，并提供免费的HTTPS服务，极大地简化了配置过程。 Blogger自带统计信息的功能，可以很方便细致地查看博客访问量和访问来源。 由于网站内容都保存在Blogger平台上，不需要自己搭建服务器，也不用担心访问速度。 安全性 依托于Google，网站的安全性得到了极大的保障，并且不需要付出任何成本。 个人信息可以得到比较好的保护。由于没有使用自建服务器，攻击者无法从服务器IP或者服务商获得个人信息；同时在Google Domains注册域名的时候，也会提供隐藏注册信息的服务，不用担心被whois开盒。 劣势 个性化设置较少 Blogger仅提供了少量主题，虽然能够调整布局并添加一些小工具，但个性化的程度仍然很低。 发布文章不方便 我的博文一般是在本地写好然后再发布到网站，在Blogger发布时每次都要重新排版，当博客内容需要修改的时候，也要分别在本地和Blogger修改，十分不方便，不便于进行内容管理。这也是我想要放弃Blogger的最主要的原因。 评论BUG 虽然博客有了一定的访问量，但评论数依然是0。测试之后我发现，Blogger的匿名评论存在Bug，无法成功发布，而要求读者使用Google账号发布无疑会降低评论的意愿。虽然我的博客主要是面向自己，但也很期待能够和读者有所交流。 大陆访问问题 作为Google的博客平台，Blogger已经遭到了Great Firewall的封锁，搭建于此的博客在大陆地区无法稳定访问。 总结 Blogger的优势和劣势都很明显，也有明确的适用人群。我个人很喜欢Blogger，这是我博客开始的地方，我也不是很介意主题单一。但是本地服务端内容同步于我而言十分重要，是一个必须要解决的问题，同时也为了长期的发布体验，我决定离开Blogger，使用Hugo搭建自己的个人博客。
-在下一期系列博文中，我将介绍一下选择Hugo的原因以及准备工作，并记录一下在这个过程中遇到的问题。</p>
+<p>逢虎年新春，自己在Blogger上已经发布了10篇文章，能坚持写作对自己而言是一件很有意义的事情。随着发布内容的增多，博客访问量也突破了15...</p>
 </section>
-<footer class=entry-footer><span title="2022-01-31 17:16:09 +0800 CST">一月 31, 2022</span>&nbsp;·&nbsp;王北洛</footer>
+<footer class=entry-footer><span title="2022-01-31 17:16:09 +0800 CST">一月 31, 2022</span>&nbsp;·&nbsp;1261 字&nbsp;·&nbsp;王北洛</footer>
 <a class=entry-link aria-label="post link to 新年新家，从Google Blogger到Hugo：1 Blogger的优缺点" href=https://www.beiluowang.com/2022/01/new-year-new-home-blogger-evaluation/></a>
 </article>
 </main>
