@@ -1,4 +1,201 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on 王北洛写字的地方</title><link>https://www.beiluowang.com/posts/</link><description>Recent content in Posts on 王北洛写字的地方</description><image><url>https://www.beiluowang.com/logo_pixel_new.png</url><link>https://www.beiluowang.com/logo_pixel_new.png</link></image><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright><lastBuildDate>Thu, 28 Apr 2022 22:12:53 +0800</lastBuildDate><atom:link href="https://www.beiluowang.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>镜花水月，虫儿（二）</title><link>https://www.beiluowang.com/2022/04/through-the-mirror-bug-two/</link><pubDate>Thu, 28 Apr 2022 22:12:53 +0800</pubDate><guid>https://www.beiluowang.com/2022/04/through-the-mirror-bug-two/</guid><description>前情提要：镜花水月，虫儿（一） 二 出发之前，我在衣柜前踌躇了很久，想着该以什么样的面目在他面前出现。最终选择了一件许久未穿的、在婚前购买的风衣</description><content:encoded><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on 王北洛写字的地方</title><link>https://www.beiluowang.com/posts/</link><description>Recent content in Posts on 王北洛写字的地方</description><image><url>https://www.beiluowang.com/logo_pixel_new.png</url><link>https://www.beiluowang.com/logo_pixel_new.png</link></image><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright>**Copyright © 2021 - 2022 Beiluo Wang, All Rights Reserved**</copyright><lastBuildDate>Tue, 03 May 2022 14:43:16 +0800</lastBuildDate><atom:link href="https://www.beiluowang.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>ROS Basics - Wiki</title><link>https://www.beiluowang.com/2022/05/ros-basics-wiki/</link><pubDate>Tue, 03 May 2022 14:43:16 +0800</pubDate><guid>https://www.beiluowang.com/2022/05/ros-basics-wiki/</guid><description>在学习ROS的过程中记录了一些笔记，整理成wiki的形式，方便日后查阅。 ROS Basics ROS程序如何执行？ ROS程序通过launch files文件来执</description><content:encoded><![CDATA[<blockquote>
+<p>在学习ROS的过程中记录了一些笔记，整理成wiki的形式，方便日后查阅。</p>
+</blockquote>
+<h2 id="ros-basics">ROS Basics</h2>
+<h3 id="ros程序如何执行">ROS程序如何执行？</h3>
+<ul>
+<li>ROS程序通过<code>launch files</code>文件来执行，程序执行的命令为：<code>roslaunch &lt;package_name&gt; &lt;launch_file&gt;</code>，其中<code>&lt;package_name&gt;</code>指包含<code>launch file</code>的<code>package</code>的名字，<code>&lt;launch_file&gt;</code>为<code>launch file</code>的文件名。</li>
+</ul>
+<h3 id="什么是ros-package">什么是<code>ROS package</code>?</h3>
+<ul>
+<li>ROS使用<code>package</code>来对程序进行组织和管理，<code>package</code>内储存了一个ROS程序所包含的全部文件，包括cpp文件、python文件、配置文件、编译文件、启动文件以及参数文件等。</li>
+<li><code>package</code>文件夹中通常包含以下几个部分：
+<ol>
+<li><code>launch</code>文件夹：用于存储启动文件(.launch)；</li>
+<li><code>src</code>文件夹：用于存储源文件(.cpp .py)；</li>
+<li><code>CMakeLists.txt</code>文件：记录用于编译程序的<code>cmake</code>语句；</li>
+<li><code>package.xml</code>文件：记录了<code>package</code>信息和依赖；</li>
+</ol>
+</li>
+<li>进入<code>package</code>文件夹的命令：<code>roscd &lt;package_name&gt;</code></li>
+</ul>
+<h3 id="什么是启动文件launch-files">什么是启动文件<code>launch files</code>?</h3>
+<ul>
+<li>启动文件中的内容包含在<code>&lt;launch&gt;</code> 标签内，定义了需要执行的<code>node</code>。</li>
+<li>在<code>node</code>标签中，包含以下内容：
+<ul>
+<li><code>pkg=&quot;package_name&quot;</code> # 需要执行的程序所在的<code>package</code></li>
+<li><code>type=&quot;python_file_name.py&quot;</code> # 需要执行的源文件名</li>
+<li><code>name=&quot;node_name&quot;</code> # 用来启动源文件的<code>ROS node</code></li>
+<li><code>output=&quot;type_of_output&quot;</code> # 程序的输出形式</li>
+<li>其中，<code>pkg-type-name</code>是依次包含的<strong>层级关系</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="如何创建一个ros-package">如何创建一个<code>ROS package</code>?</h3>
+<ul>
+<li>在工作路径下的<code>src</code>文件夹中，通过以下命令创建<code>package</code>：<code>catkin_create_pkg &lt;package_name&gt; &lt;package_dependecies&gt;</code> （eg. <code>catkin_create_pkg my_package rospy</code>）</li>
+<li><code>ROS package</code>刷新命令：<code>rospack profile</code></li>
+<li>显示当前全部的<code>ROS package</code>命令：<code>rospack list</code></li>
+</ul>
+<h3 id="什么是ros-nodes">什么是<code>ROS Nodes</code>?</h3>
+<ul>
+<li><code>ROS Node</code>是ROS中用来执行各个功能的进程，彼此间可以互相进行通信（A <em>node</em> is a process that performs computation）</li>
+<li>查看当前正在运行的<code>ROS Nodes</code>命令：<code>rosnode list</code></li>
+<li>查看某个<code>ROS Node</code>的信息：<code>rosnode info &lt;node_name&gt;</code></li>
+</ul>
+<h3 id="如何编译ros-package">如何编译<code>ROS package</code>？</h3>
+<ul>
+<li>在工作路径中执行命令：<code>catkin_make</code></li>
+<li>编译完成后，执行<code>source devel/setup.bash</code>以使编译结果生效；</li>
+<li>当只需要编译特定<code>package</code>时，执行以下命令：<code>catkin_make --only-pkg-with-deps &lt;package_name&gt;</code></li>
+<li>当需要完整地重新编译时，需删除<code>build/</code>文件夹后再进行编译；</li>
+</ul>
+<h3 id="什么是parameter-server">什么是<code>Parameter Server</code>?</h3>
+<ul>
+<li><code>Parameter Server</code>是用来储存ROS参数的字典（dictionary），包括配置参数等。用于<code>ROS Nodes</code>在执行期间使用。</li>
+<li>获取可用参数的命令：<code>rosparam list</code></li>
+<li>获取某个参数值的命令：<code>rosparam get &lt;parameter_name&gt;</code></li>
+<li>设置某个参数值的命令：<code>rosparam set &lt;parameter_name&gt; &lt;value&gt;</code></li>
+</ul>
+<h3 id="什么是roscore">什么是<code>Roscore</code>?</h3>
+<ul>
+<li><code>Roscore</code>是ROS系统的主进程，在运行其他ROS程序前必须启动该进程。启动命令为<code>roscore</code></li>
+</ul>
+<h3 id="ro中两个重要的environment-variables">RO中两个重要的<code>Environment Variables</code></h3>
+<ul>
+<li><code>ROS_MASTER_URI</code>包含ROS核心进程执行的设备，默认情况下是本机（<code>localhost</code>）；</li>
+<li><code>ROS_PACKAGE_PATH</code>包含存储<code>ROS package</code>的路径；</li>
+</ul>
+<h2 id="topics---services---actions">Topics - Services - Actions</h2>
+<h3 id="ros-topics-services-actions间有什么区别">ROS <code>Topics</code>, <code>Services</code>, <code>Actions</code>间有什么区别？</h3>
+<ul>
+<li><code>Topics</code>用来提供全局、全时间上的功能，比如传感器信息的发布等；</li>
+<li><code>Services</code>用来提供在需要时执行的功能，在<code>Services</code>执行过程中无法处理其他任务，需等到执行完成，比如人脸识别系统等；</li>
+<li><code>Actions</code>是异步版的<code>Services</code>，在<code>Actions</code>执行过程中，可同时处理其他任务，比如控制机器人的移动等；</li>
+</ul>
+<h2 id="ros-topics-publishers-subscribers--messages">ROS Topics: Publishers, Subscribers &amp; Messages</h2>
+<h3 id="什么是ros-topics">什么是<code>ROS Topics</code>?</h3>
+<ul>
+<li><code>ROS Topics</code>就像是一条各端都是<code>ROS Nodes</code>的管道。一些<code>ROS Nodes</code>使用它来向其他<code>Nodes</code>发布信息，一些<code>ROS Nodes</code>使用它来接收信息，从而实现<code>ROS Nodes</code>间的通信。</li>
+<li>获取当前可用的<code>ROS Topics</code>命令：<code>rostopic list</code></li>
+<li>获取某个<code>ROS Topic</code>的信息命令：<code>rostopic info TOPIC_NAME</code></li>
+<li>使用<code>ROS Topic</code>发布信息的命令：<code>rostopic pub &lt;topic_name&gt; &lt;message_type&gt; &lt;value&gt;</code></li>
+<li>接收<code>ROS Topic</code>正在发布的信息的命令：<code>rostopic echo &lt;topic_name&gt;</code></li>
+<li>关于<code>ROS Topic</code>的更多命令：<code>rostopic -h</code></li>
+<li>例如：Topic<code>/counter</code>的信息如下：表示该Topic输出信息的类型为<code>std_msgs/Int32</code>，用来发布信息的<code>ROS Node</code>为<code>/topic_publisher</code>，以及接受信息的<code>ROS Nodes</code></li>
+</ul>
+<pre tabindex="0"><code>Type: std_msgs/Int32
+
+Publishers:
+ * /topic_publisher (http://ip-172-31-16-133:47971/)
+
+Subscribers: None
+</code></pre><h3 id="什么是topics-messages">什么是<code>Topics Messages</code>?</h3>
+<ul>
+<li><code>ROS Topics</code>通过<code>Topic Messages</code>处理信息；</li>
+<li><code>Topic Messages</code>定义在<code>ROS Package</code>路径下<code>mags/*.msg</code>文件中；</li>
+<li>查看当前所有可用<code>Topic Messages</code>的命令：<code>rosmsg list</code></li>
+<li>获取某个<code>Topic Message</code>信息的命令：<code>rosmsg show &lt;message&gt;</code></li>
+</ul>
+<h2 id="ros-services-clients-servers--messages">ROS Services: Clients, Servers &amp; Messages</h2>
+<h3 id="什么是ros-services">什么是<code>ROS Services</code>?</h3>
+<ul>
+<li><code>ROS Services</code>以“请求/回复（Request / reply）”的形式执行功能，服务端（<code>Server</code>）和客户端（<code>Client</code>）之间传递的信息即为。</li>
+<li>获取当前可用<code>ROS Services</code>列表的命令：<code>rosservice list</code></li>
+<li>获取某<code>Service</code>的详细信息：<code>rosservice info /name_of_your_service</code>
+<ul>
+<li>对于<code>Service</code>信息。其中包含了提供该服务的<code>ROS node</code>信息、传递的<code>Message</code>类型，以及所需要的参数。</li>
+</ul>
+</li>
+<li>获取某<code>Service Message</code>的详细信息：<code>rossrv show trajectory_by_name_srv/TrajByName</code>
+<ul>
+<li><code>Service Message</code>定义在<code>ROS package</code>路径下的<code>srv/*.srv</code>文件中；</li>
+<li>对于<code>Service Message</code>，包含<code>REQUEST</code>和<code>RESPONSE</code>两个部分。其中<code>REQUEST</code>定义了调用服务<code>ROS Servise</code>时需要传递的信息类型，<code>RESPONSE</code>定义了该服务所反馈的信息类型；</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>$ rosservice info /execute_trajectory
+Node: /iri_wam_reproduce_trajectory
+URI: rosrpc://ip-172-31-17-169:35175
+Type: iri_wam_reproduce_trajectory/ExecTraj
+Args: file
+
+
+$ rossrv show trajectory_by_name_srv/TrajByName
+string traj_name
+---
+bool success
+string status_message
+</code></pre><h2 id="ros-actions-client-servers--messages">ROS Actions: Client, Servers &amp; Messages</h2>
+<h3 id="什么是ros-actions">什么是<code>ROS Actions</code>?</h3>
+<ul>
+<li><code>ROS Actions</code>是对<code>ROS Node</code>中功能的异步调用。包括实现特定功能的服务端<code>Server</code>以及调用该功能的客户端<code>Client</code>；</li>
+<li><code>ROS Actions</code>以<code>ROS topic</code>的形式存在，可以通过命令<code>rostopic list</code>进行查看；一个<code>ROS Action Server</code>提供了5个<code>ROS topics</code>，包括<code>/ardrone_action_server/cancel</code>, <code>/ardrone_action_server/feedback</code>, <code>/ardrone_action_server/goal</code>, <code>/ardrone_action_server/result</code>, <code>/ardrone_action_server/status. </code>
+<ul>
+<li>其中，<code>ardrone_action_server</code>为<code>ROS Action Server</code>的名字，<code>cancel, feedback, goal, result and status</code>为与该<code>Server</code>通信时的信息（<code>Messages</code>）；</li>
+</ul>
+</li>
+</ul>
+<h3 id="如何调用action-server">如何调用<code>Action Server</code>?</h3>
+<ul>
+<li>和调用<code>ROS Topic</code>和<code>ROS Service</code>一样，调用<code>Action Server</code>意味着在客户端和服务端之间传递信息（<code>Messages</code>）。<code>Action Message</code>包含<code>goal</code>, <code>result</code>, <code>feedback</code>三个部分，其中<code>goal</code>中定义了服务端接收的信息，<code>result</code>和<code>feedback</code>中定义了反馈的信息。
+<ul>
+<li><code>Action Messages</code>定义在<code>ROS package</code>路径下的<code>action/*.actin</code>文件中；</li>
+</ul>
+</li>
+<li>在调用<code>Action Server</code>时，首选需要连接到所希望调用的<code>Action Server</code>，然后创建<code>goal</code>信息并传递给服务端；
+<ul>
+<li>向已启动的<code>Action Server</code>传递<code>goal</code>可通过两种方式来实现：
+<ul>
+<li>直接调用<code>ROS Topic</code>，<code>rostopic pub /[name_of_action_server]/goal /[type_of_the_message_used_by_the_topic] [TAB][TAB]</code></li>
+<li>编写Python脚本</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>#goal
+package_where_message_is/message_type goal_var_name
+---
+#result
+package_where_message_is/message_type result_var_name
+---
+#feedback
+package_where_message_is/message_type feedback_var_name
+</code></pre><h3 id="什么是axclient">什么是<code>axclient</code>?</h3>
+<ul>
+<li><code>axclient</code>是由<code>actionlib package</code>提供的GUI工具，能够可视化地与<code>Action Server</code>进行交互，传递<code>goal</code>并获取反馈。使用<code>rosrun actionlib_tools axclient.py /&lt;name_of_action_server&gt;</code>命令进行调用。</li>
+</ul>
+<h2 id="debugging-tools">Debugging Tools</h2>
+<h3 id="ros-log中包含哪些log类型"><code>ROS Log</code>中包含哪些log类型？</h3>
+<ul>
+<li><code>DEBUG</code>, <code>INFO</code>, <code>WARNING</code>, <code>ERROR</code>, <code>TATAL</code>五种类型，在<code>python</code>脚本中，可通过<code>rospy.logXXX(msg, args)</code>进行记录；</li>
+</ul>
+<h3 id="什么是rqt_console">什么是<code>rqt_console</code>?</h3>
+<ul>
+<li><code>rqt_console</code>是用来查看、过滤、高亮显示<code>ROS Log</code>的GUI工具，通过<code>rqt_console</code>命令进行调用；</li>
+</ul>
+<h3 id="什么是rqt_plot">什么是<code>rqt_plot</code>？</h3>
+<ul>
+<li><code>rqt_plot</code>是用来对程序运行中所产生的数据进行可视化的GUI工具，通过<code>rqt_plot</code>命令进行调用；</li>
+</ul>
+<h3 id="什么是rqt_graph">什么是<code>rqt_graph</code>?</h3>
+<ul>
+<li><code>rqt_graph</code>是用来可视化<code>ROS topics</code>间连接关系的GUI工具，通过<code>rqt_graph</code>命令进行调用；</li>
+</ul>
+<h3 id="什么是rosbag">什么是<code>rosbag</code>?</h3>
+<ul>
+<li><code>rosbag</code>是对<code>ROS</code>的运行过程进行记录、查看和回放的GUI工具，通过<code>rosbag [arg]</code>命令进行调用；</li>
+</ul>
+<h3 id="什么是rviz">什么是<code>RViz</code>?</h3>
+<ul>
+<li><code>RViz</code>是<code>ROS</code>的3D可视化工具，能够获取仿真和真实环境中的机器人的行为和传感器信息，并进行可视化，通过<code>rosrun rviz rviz</code>进行调用；</li>
+</ul>
+<h2 id="reference">Reference</h2>
+<p><a href="https://wiki.ros.org">ROS.org</a>
+<a href="https://www.theconstructsim.com/">The Construct</a></p>
+]]></content:encoded></item><item><title>镜花水月，虫儿（二）</title><link>https://www.beiluowang.com/2022/04/through-the-mirror-bug-two/</link><pubDate>Thu, 28 Apr 2022 22:12:53 +0800</pubDate><guid>https://www.beiluowang.com/2022/04/through-the-mirror-bug-two/</guid><description>前情提要：镜花水月，虫儿（一） 二 出发之前，我在衣柜前踌躇了很久，想着该以什么样的面目在他面前出现。最终选择了一件许久未穿的、在婚前购买的风衣</description><content:encoded><![CDATA[<blockquote>
 <p>前情提要：<a href="https://www.beiluowang.com/2022/04/through-the-mirror-bug-one/">镜花水月，虫儿（一）</a></p>
 </blockquote>
 <h2 id="二">二</h2>
