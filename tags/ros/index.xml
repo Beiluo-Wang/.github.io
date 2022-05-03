@@ -193,6 +193,6 @@ package_where_message_is/message_type feedback_var_name
 <li><code>RViz</code>是<code>ROS</code>的3D可视化工具，能够获取仿真和真实环境中的机器人的行为和传感器信息，并进行可视化，通过<code>rosrun rviz rviz</code>进行调用；</li>
 </ul>
 <h2 id="reference">Reference</h2>
-<p><a href="https://wiki.ros.org">ROS.org</a>
-<a href="https://www.theconstructsim.com/">The Construct</a></p>
+<p><a href="https://wiki.ros.org">ROS.org</a></p>
+<p><a href="https://www.theconstructsim.com/">The Construct</a></p>
 ]]></content:encoded></item></channel></rss>
