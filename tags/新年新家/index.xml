@@ -72,14 +72,14 @@ auto_publish=$4
 </figure>
 
 <p>现在，我即将和Google Blogger说再见，希望自己在新的平台，用新的方式，坚持书写不变的初心，成为一名真正的<em><strong>写作者</strong></em>。</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>不将<code>article_name</code>直接作为<code>filename</code>的原因在于<code>article_name</code>一般为中文，将其用于<code>url</code>看起来不够和谐。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded></item><item><title>新年新家，从Google Blogger到Hugo：2 不够优雅的Hugo体验</title><link>https://www.beiluowang.com/2022/02/new-year-new-home-hi-hugo/</link><pubDate>Tue, 01 Feb 2022 21:51:55 +0800</pubDate><guid>https://www.beiluowang.com/2022/02/new-year-new-home-hi-hugo/</guid><description>在新年新家系列第一篇博文中，我介绍了使用Google Blogger作为博客平台两个月来的心得体会，以及决定将其放弃的原因：我想要保证本地和网</description><content:encoded><![CDATA[<p>在<em>新年新家</em>系列第一篇博文中，我介绍了使用Google Blogger作为博客平台两个月来的心得体会，以及决定将其放弃的原因：我<strong>想要保证本地和网站服务端内容同步，并且希望能够拥有更为优雅的发布体验。</strong> 本篇博文将首先介绍选择Hugo的原因，然后介绍网站内容配置和迁移的过程中遇到的问题以及相应的解决方法。最后，分享一下我目前的博文撰写和发布的工作流。</p>
 <h3 id="选择hugo的原因">选择Hugo的原因</h3>
 <p>搭建静态网站的工具有很多，除了<a href="https://gohugo.io">Hugo</a>外，常见的还有<a href="https://jekyllrb.com/">jekyll</a>、 <a href="https://blog.getpelican.com/">pelican</a>、<a href="https://www.getzola.org/">zola</a>等。选择使用Hugo，主要有三个方面的原因：</p>
